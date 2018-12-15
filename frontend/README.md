@@ -1,11 +1,29 @@
-# Frontend
+# frontend
 
-This is the frontend part of the project! This service will expose a panel to select the animations available, get the current animation in progress and change parameters.
+## Project setup
+```
+npm install
+```
 
-## Requirements
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-## Installation
+### Compiles and minifies for production
+```
+npm run build
+```
 
-## Start the service
+### Run your tests
+```
+npm run test
+```
 
-## Stop the service
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
