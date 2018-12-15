@@ -10,8 +10,12 @@ const publish_animations = require('./controllers/publish-animations');
 //const get_mqtt = require('./controllers/mqtt');
 
 const bodyParser = require('body-parser');
+var cors = require('cors')
 
-app.use(bodyParser.json())
+
+app.use(bodyParser.json());
+app.use(cors());
+
 app.get('/api/animations/', get_animations);
 app.post('/api/animations/load', publish_animations);
 //app.get('/api/mqtt/', get_mqtt);
