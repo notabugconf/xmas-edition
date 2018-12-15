@@ -11,15 +11,15 @@
 
 <script>
 //import HelloWorld from './components/HelloWorld.vue'
-import startAnimationBtn from './components/startAnimationBtn'
-import list from './components/list'
-import tempoPicker from './components/tempoPicker'
-import colorPicker from './components/colorPicker'
+import startAnimationBtn from "./components/startAnimationBtn";
+import list from "./components/list";
+import tempoPicker from "./components/tempoPicker";
+import colorPicker from "./components/colorPicker";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-//    HelloWorld,
+    //    HelloWorld,
     startAnimationBtn,
     list,
     tempoPicker,
@@ -27,16 +27,16 @@ export default {
   },
   data: () => {
     return {
-      color: 'red',
-      tempo: '0'
-    }
+      color: "red",
+      tempo: "0"
+    };
   }
-}
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
