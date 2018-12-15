@@ -9,6 +9,15 @@ Backend part must communicate with Firmware through serial communication.
 
 ## Installation
 
+```sh
+npm i
+```
+
 ## Start the service
+
+```sh
+cd backend
+node app.js
+```
 
 ## Stop the service
