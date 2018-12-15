@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/am-pino.jpg">
+    <list/>
     <startAnimationBtn/>
   </div>
 </template>
@@ -8,12 +9,14 @@
 <script>
 //import HelloWorld from './components/HelloWorld.vue'
 import startAnimationBtn from './components/startAnimationBtn'
+import list from './components/list'
 
 export default {
   name: 'app',
   components: {
 //    HelloWorld,
-    startAnimationBtn
+    startAnimationBtn,
+    list
   }
 }
 </script>
