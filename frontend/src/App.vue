@@ -1,11 +1,13 @@
 <template>
   <div id="app">
+    {{ response }}
     <img alt="Vue logo" src="./assets/am-pino.jpg">
     <list/>
     <startAnimationBtn/>
     <colorPicker v-model="color"/>
     <tempoPicker v-model="tempo"/>
     <startAnimationBtn :color="color" :tempo="tempo"/>
+    <Animation title="Scegli la tua animazione"/>
   </div>
 </template>
 
@@ -15,6 +17,7 @@ import startAnimationBtn from './components/startAnimationBtn'
 import list from './components/list'
 import tempoPicker from './components/tempoPicker'
 import colorPicker from './components/colorPicker'
+import colorPicker from './components/Animation'
 
 export default {
   name: 'app',
@@ -23,7 +26,8 @@ export default {
     startAnimationBtn,
     list,
     tempoPicker,
-    colorPicker
+    colorPicker,
+    Animation
   },
   data: () => {
     return {
@@ -32,6 +36,7 @@ export default {
     }
   }
 }
+
 </script>
 
 <style>
