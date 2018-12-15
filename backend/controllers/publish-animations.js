@@ -4,4 +4,7 @@ module.exports = (req, res) => {
     // check hash if you want
     // req.body;
 
+    const MQTT = require('./mqtt');
+
+    MQTT.send(req.body);
 }
