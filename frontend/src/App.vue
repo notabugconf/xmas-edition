@@ -3,6 +3,9 @@
     <img alt="Vue logo" src="./assets/am-pino.jpg">
     <list/>
     <startAnimationBtn/>
+    <colorPicker v-model="color"/>
+    <tempoPicker v-model="tempo"/>
+    <startAnimationBtn :color="color" :tempo="tempo"/>
   </div>
 </template>
 
@@ -10,13 +13,23 @@
 //import HelloWorld from './components/HelloWorld.vue'
 import startAnimationBtn from './components/startAnimationBtn'
 import list from './components/list'
+import tempoPicker from './components/tempoPicker'
+import colorPicker from './components/colorPicker'
 
 export default {
   name: 'app',
   components: {
 //    HelloWorld,
     startAnimationBtn,
-    list
+    list,
+    tempoPicker,
+    colorPicker
+  },
+  data: () => {
+    return {
+      color: 'red',
+      tempo: '0'
+    }
   }
 }
 </script>

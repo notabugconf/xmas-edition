@@ -1,0 +1,53 @@
+[
+    {
+        "code":"1",
+        "name":"Rainbow",
+        "options":{
+            "color": {
+                "default" : [255,255,255],
+                "changeable" : false
+            },
+            "frequency": {
+                "default" : 10,
+                "changeable" : true,
+                "minval" : 5,
+                "maxval" : 30
+            }
+        }
+    },
+    {
+        "code":"2",
+        "name":"Raindeer",
+        "options":{
+            "color": {
+                "default" : [255,255,255],
+                "changeable" : false
+            },
+            "frequency": {
+                "default" : 10,
+                "changeable" : true,
+                "minval" : 5,
+                "maxval" : 30
+            }
+        }
+    },
+    {
+        "code":"3",
+        "name":"Snow",
+        "options":{
+            "color": {
+                "default" : [255,255,255],
+                "changeable" : false
+            },
+            "frequency": {
+                "default" : 10,
+                "changeable" : true,
+                "minval" : 5,
+                "maxval" : 30
+            }
+        }
+    }
+
+
+
+]
