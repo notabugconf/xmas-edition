@@ -1,17 +1,19 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/am-pino.jpg">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <startAnimationBtn/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+//import HelloWorld from './components/HelloWorld.vue'
+import startAnimationBtn from './components/startAnimationBtn'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+//    HelloWorld,
+    startAnimationBtn
   }
 }
 </script>
