@@ -1,29 +1,33 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/am-pino.jpg">
-    <list/>
+    <!-- <list/> -->
     <startAnimationBtn/>
     <colorPicker v-model="color"/>
     <tempoPicker v-model="tempo"/>
     <startAnimationBtn :color="color" :tempo="tempo"/>
+    <Animation title="Scegli la tua animazione"/>
   </div>
 </template>
 
 <script>
 //import HelloWorld from './components/HelloWorld.vue'
+
 import startAnimationBtn from "./components/startAnimationBtn";
-import list from "./components/list";
+// import list from "./components/list";
 import tempoPicker from "./components/tempoPicker";
 import colorPicker from "./components/colorPicker";
+import Animation from "./components/Animation";
 
 export default {
   name: "app",
   components: {
     //    HelloWorld,
     startAnimationBtn,
-    list,
+    // list,
     tempoPicker,
-    colorPicker
+    colorPicker,
+    Animation
   },
   data: () => {
     return {
